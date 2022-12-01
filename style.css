@@ -1,7 +1,6 @@
 /* CSS resets */
 * {
-  font-family: 'Poppins',
-  sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -20,7 +19,12 @@ a {
   text-decoration: inherit;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
   font-style: normal;
   font-size: medium;
@@ -48,9 +52,11 @@ h1 {
   padding: 5vh 0;
 }
 
-
 /* Construction guides */
 
-body,section,article,span {
+body,
+section,
+article,
+span {
   border: 1px solid;
 }
