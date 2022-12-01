@@ -9,7 +9,7 @@ body {
   align-items: center;
   margin: 5vh;
   min-width: 300px;
-  background: url(assets/images/blob-scatter-haikei.svg) no-repeat center center;
+  background: url(assets/images/Background.svg) no-repeat center center;
 }
 
 a {
@@ -25,24 +25,39 @@ h6 {
   font-weight: normal;
   font-style: normal;
   font-size: medium;
+  margin: 0;
 }
 
 /* Font sizing */
 
+p {
+  color: #344563;
+}
+
 h1 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
+  color: #172B4D;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #7F8CFF;
 }
 
 /* Classes */
+
+/* Displays */
 
 .navigation {
   display: flex;
   justify-content: space-between;
 }
 
-.fill-100 {
-  width: 100%;
+/* Paddings and margins */
+
+.mv12px {
+  margin: 12px 0;
 }
 
 .pv2 {
@@ -53,6 +68,37 @@ h1 {
   padding: 5vh 0;
 }
 
+.pv20 {
+  padding: 20vh 0;
+}
+
+.pr20px {
+  padding-right: 20px;
+}
+
+/* Graphic sizing */
+
+.fill-100 {
+  width: 100%;
+}
+
+.logo {
+  height: 40px;
+  margin: 0 -12px;
+}
+
+.menu {
+  width: 40px;
+}
+
 .icon {
-  width: 50px;
+  width: 20px;
+}
+
+/* List style */
+
+.xul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
 }
