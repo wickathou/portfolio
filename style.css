@@ -56,12 +56,3 @@ h1 {
 .icon {
   width: 50px;
 }
-
-/* Construction guides */
-
-body,
-section,
-article,
-span {
-  border: 1px solid;
-}
