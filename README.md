@@ -3,6 +3,10 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+  - [💻 Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Usage](#usage)
 - [💻 Getting Started](#getting-started)
 - [👥 Authors](#authors)
 - [📝 License](#license)
@@ -16,6 +20,26 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 HTML | CSS | GIT
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+GIT | A code editor | A web browser
+
+### Setup
+
+Clone this repository to your desired folder:
+
+  git clone git@github.com:wickathou/portfolio.git
+
+### Usage
+
+To run the project, open index.html with your preferred web browser or open it with a live server from your code editor, I recommend using [Live Server by Ritwick Dey](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ## 👥 Author <a name="author"></a>
 
