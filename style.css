@@ -9,10 +9,7 @@ body {
   align-items: center;
   margin: 5vh;
   min-width: 300px;
-}
-
-main {
-  padding: 10vh 0;
+  background: url(assets/images/blob-scatter-haikei.svg) no-repeat center center;
 }
 
 a {
@@ -48,8 +45,16 @@ h1 {
   width: 100%;
 }
 
-.pv {
+.pv2 {
+  padding: 2vh 0;
+}
+
+.pv5 {
   padding: 5vh 0;
+}
+
+.icon {
+  width: 50px;
 }
 
 /* Construction guides */
