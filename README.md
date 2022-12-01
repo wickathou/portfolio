@@ -9,6 +9,8 @@
     - [Usage](#usage)
 - [💻 Getting Started](#getting-started)
 - [👥 Authors](#authors)
+- [🤝 Contributing](#contributing)
+- [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
 # 📖 Portfolio Micro <a name="about-project"></a>
@@ -48,6 +50,14 @@ To run the project, open index.html with your preferred web browser or open it w
 - GitHub: [@wickathou](https://github.com/wickathou)
 - LinkedIn: [@javierjhm](https://linkedin.com/in/javierjhm)
 - Instagram: [@digijavi](https://www.instagram.com/digijavi/)
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Feel free to check the [issues page](https://github.com/wickathou/portfolio/issues).
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+Thanks Microverse, learn how to code > [Join Microverse](https://www.microverse.org/?grsf=9m3hq6)
 
 ## 📝 License <a name="license"></a>
 
