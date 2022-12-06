@@ -9,6 +9,7 @@
     - [Usage](#usage)
 - [💻 Getting Started](#getting-started)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
@@ -51,6 +52,11 @@ To run the project, open index.html with your preferred web browser or open it w
 - LinkedIn: [@javierjhm](https://linkedin.com/in/javierjhm)
 - Instagram: [@digijavi](https://www.instagram.com/digijavi/)
 
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[new_feature_1]**
+- [ ] **[new_feature_2]**
+- [ ] **[new_feature_3]**
 ## 🤝 Contributing <a name="contributing"></a>
 
 Feel free to check the [issues page](https://github.com/wickathou/portfolio/issues).
