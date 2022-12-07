@@ -298,8 +298,44 @@ button:disabled {
 }
 
 /* Forms  */
+footer{
+  background: #FFFFFF;
+}
+
+form{
+  gap: 20px;
+  margin: 24px;
+}
 
 form::placeholder {
   color: #b3bac5;
 }
 
+.title{
+  color: #FFFFFF;
+  font-size: 40px;
+  text-align: center;
+}
+
+.details{
+  color: #EBEBFF;
+  font-size: 20px;
+  text-align: center;
+}
+
+form input{
+  padding: 16px 15px;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+}
+
+form textarea{
+  padding: 16px 38px 16px 15px;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+}
+
+.button-white{
+  background: #FFFFFF;
+  color: #6070FF;
+}

@@ -219,15 +219,17 @@
     </article>
   </main>
   <footer>
-    <article class="bg-footer">
-      <section>
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste perspiciatis repellendus at maiores sapiente quia similique officiis ut. Cumque, natus eum inventore quis distinctio similique dolorem quia corporis ut accusamus.</p>
-        <form class="flex flex-column aic" action="" method="post">
-          <input type="text" id="name-input" name="name" placeholder="Your name">
-          <input type="text" id="email" name="email" placeholder="Your email">
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <input type="submit" value="Submit">
+    <article class="bg-footer border-tl">
+      <section class="pv20">
+        <h2 class="title">Contact me</h2>
+        <p class="details">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+        <form class="flex flex-column" action="" method="post">
+          <input type="text" id="name-input" name="name" placeholder="Your name" maxlength="30" required>
+          <input type="text" id="email" name="email" placeholder="Your email" required>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your message" required maxlength="500"></textarea>
+          <div>
+            <button class="button-white">Get It Touch</button>
+          </div>
         </form>
       </section>
     </article>
