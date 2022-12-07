@@ -301,7 +301,14 @@ button:disabled {
   border: 1px solid #c1c7d0;
 }
 
+.button-white {
+  background: #ffffff;
+  color: #6070ff;
+  margin: 0;
+}
+
 /* Forms  */
+
 footer {
   background: #ffffff;
   z-index: 10;
@@ -345,11 +352,6 @@ form textarea {
   border-radius: 8px;
 }
 
-.button-white {
-  background: #ffffff;
-  color: #6070ff;
-  margin: 0;
-}
 .footer_class {
   padding-top: 103px;
   padding-bottom: 45px;
