@@ -214,11 +214,15 @@ h6 {
 }
 
 .border-bl {
-  border-radius: 0 0 0 100px;
+  border-bottom-left-radius: 100px;
 }
 
 .border-tr {
-  border-radius: 0 100px 0 0;
+  border-top-right-radius: 100px;
+}
+
+.border-tl {
+  border-top-left-radius: 100px;
 }
 
 .border-bottom-line {
@@ -241,6 +245,10 @@ h6 {
 
 .bg-list {
   background-color: #f7f7f9;
+}
+
+.bg-footer {
+  background-color: #6070ff;
 }
 
 /* Grid */
@@ -288,3 +296,10 @@ button:disabled {
   color: #5e6c84;
   border: 1px solid #c1c7d0;
 }
+
+/* Forms  */
+
+form::placeholder {
+  color: #b3bac5;
+}
+
