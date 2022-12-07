@@ -54,14 +54,24 @@ To run the project, open index.html with your preferred web browser or open it w
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Desktop version]**
+- [ ] **[Interactive menu]**
+- [ ] **[Animations]**
 ## 🤝 Contributing <a name="contributing"></a>
 
 Feel free to check the [issues page](https://github.com/wickathou/portfolio/issues).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+Thanks to my coding partners!
+
+👤 **Chase Innocent**
+
+- GitHub: [@Chaseknis](https://github.com/Chaseknis)
+
+👤 **Sohail Batoor**
+
+- GitHub: [@batoorsohail](https://github.com/batoorsohail)
 
 Thanks Microverse, learn how to code > [Join Microverse](https://www.microverse.org/?grsf=9m3hq6)
 
