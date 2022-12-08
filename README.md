@@ -9,6 +9,7 @@
     - [Usage](#usage)
 - [💻 Getting Started](#getting-started)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
@@ -51,11 +52,26 @@ To run the project, open index.html with your preferred web browser or open it w
 - LinkedIn: [@javierjhm](https://linkedin.com/in/javierjhm)
 - Instagram: [@digijavi](https://www.instagram.com/digijavi/)
 
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Desktop version]**
+- [ ] **[Interactive menu]**
+- [ ] **[Animations]**
 ## 🤝 Contributing <a name="contributing"></a>
 
 Feel free to check the [issues page](https://github.com/wickathou/portfolio/issues).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+Thanks to my coding partners!
+
+👤 **Chase Innocent**
+
+- GitHub: [@Chaseknis](https://github.com/Chaseknis)
+
+👤 **Sohail Batoor**
+
+- GitHub: [@batoorsohail](https://github.com/batoorsohail)
 
 Thanks Microverse, learn how to code > [Join Microverse](https://www.microverse.org/?grsf=9m3hq6)
 
