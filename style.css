@@ -87,6 +87,10 @@ h6 {
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .navigation {
   justify-content: space-between;
 }
@@ -196,10 +200,6 @@ h6 {
   display: flex;
   list-style-type: none;
   padding: 0;
-}
-
-.flex-column {
-  flex-direction: column;
 }
 
 /* Box rounds */
@@ -355,4 +355,33 @@ form textarea {
 .footer_class {
   padding-top: 103px;
   padding-bottom: 45px;
+}
+
+/* Desktop modifiers */
+
+/* Media queries */
+
+@media screen and (min-width: 600px) {
+
+  .m5vh {
+    margin: 0 5vh;
+  }
+
+  .p5vh {
+    padding: 10vh;
+  }
+
+  .xp5vh {
+    padding: 5vh;
+  }
+
+  .xp10vh {
+    padding: 10vh;
+  }
+
+  .grid-container-card {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    column-gap: 20px;
+  }
 }
