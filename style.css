@@ -420,6 +420,22 @@ form textarea {
     column-gap: 20px;
   }
 
+  article section .grid-container-card:nth-child(odd) {
+    grid-template-areas: "image content";
+  }
+
+  article section .grid-container-card:nth-child(even) {
+    grid-template-areas: "content image";
+  }
+
+  /* .grid-container-card:nth-child(odd) {
+    grid-template-areas: "image content";
+  }
+
+  .grid-container-card:nth-child(even) {
+    grid-template-areas: "content image";
+  } */
+
   .m20px {
     margin: 10vh 5vh;
   }
@@ -428,4 +444,15 @@ form textarea {
     transition-duration: 1s;
     background: #fff url(assets/images/desktop-bg.svg) no-repeat center center;
   }
+
+  .grid-item-picture {
+    grid-area: image;
+
+  }
+
+  .grid-item-content {
+    grid-area: content;
+
+  }
+
 }
