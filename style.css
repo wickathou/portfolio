@@ -384,4 +384,9 @@ form textarea {
     grid-template-rows: auto;
     column-gap: 20px;
   }
+
+  .bg-hero {
+    transition-duration: 1s;
+    background: #fff url(assets/images/desktop-bg.svg) no-repeat center center;
+  }
 }
