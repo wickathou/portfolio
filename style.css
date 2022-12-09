@@ -14,6 +14,8 @@ body {
 
 a {
   text-decoration: inherit;
+  font-size: 15px;
+  color: #344563;
 }
 
 h1,
@@ -87,6 +89,10 @@ h6 {
   display: flex;
 }
 
+.g20px {
+  gap: 20px;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -105,6 +111,10 @@ h6 {
 
 .jcb {
   justify-content: space-between;
+}
+
+.dv {
+  display: none;
 }
 
 /* Paddings and margins */
@@ -190,6 +200,26 @@ h6 {
   width: 20px;
 }
 
+.twitter {
+  animation: movetext 1s 0.4s forwards;
+}
+
+.linkedin {
+  animation: movetext 1s 0.5s forwards;
+}
+
+.medium {
+  animation: movetext 1s 0.6s forwards;
+}
+
+.github {
+  animation: movetext 1s 0.7s forwards;
+}
+
+.angelist {
+  animation: movetext 1s 0.8s forwards;
+}
+
 .icon-lg {
   width: 50px;
 }
@@ -235,7 +265,7 @@ h6 {
   background: url(assets/images/Background.svg) no-repeat center center;
 }
 
-.bg-box {
+.bg-white {
   background-color: #fff;
 }
 
@@ -357,12 +387,32 @@ form textarea {
   padding-bottom: 45px;
 }
 
+@keyframes scale {
+  0% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes movetext {
+  0% {
+    transform: translateY(40rem) rotateY(-20deg);
+  }
+
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
 /* Desktop modifiers */
 
 /* Media queries */
 
 @media screen and (min-width: 600px) {
-
   .m5vh {
     margin: 0 5vh;
   }
@@ -371,8 +421,21 @@ form textarea {
     padding: 10vh;
   }
 
+  .xph15vh {
+    padding: 0 15vh;
+  }
+
   .xp5vh {
     padding: 5vh;
+  }
+
+  .pv5 {
+    padding: 5vh;
+  }
+
+  .grid-container-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .xp10vh {
@@ -380,8 +443,51 @@ form textarea {
   }
 
   .grid-container-card {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     column-gap: 20px;
+  }
+
+  article section .grid-container-card:nth-child(odd) {
+    grid-template-areas: "image content";
+  }
+
+  article section .grid-container-card:nth-child(even) {
+    grid-template-areas: "content image";
+  }
+
+  .m20px {
+    margin: 10vh 5vh;
+  }
+
+  .bg-hero {
+    transition-duration: 1s;
+    background: #fff url(assets/images/desktop-bg.svg) no-repeat center center;
+  }
+
+  .bg-footer {
+    transition-duration: 1s;
+    background-image: #6070ff url(assets/images/footer-desktop-bg.svg) no-repeat center center;
+  }
+
+  .grid-item-picture {
+    grid-area: image;
+  }
+
+  .grid-item-content {
+    grid-area: content;
+  }
+
+  .mv {
+    display: none;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .dv {
+    display: block;
   }
 }
