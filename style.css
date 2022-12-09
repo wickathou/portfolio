@@ -394,8 +394,9 @@ form textarea {
 
   100% {
     transform: scale(1);
-  }   
+  }
 }
+
 @keyframes movetext {
   0% {
     transform: translateY(40rem) rotateY(-20deg);
@@ -489,5 +490,4 @@ form textarea {
   .dv {
     display: block;
   }
-
 }
