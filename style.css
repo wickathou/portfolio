@@ -30,6 +30,11 @@ h6 {
 
 /* Font sizing */
 
+a {
+  font-size: 15px;
+  color: #344563;
+}
+
 p {
   font-size: 16px;
   line-height: 24px;
@@ -85,6 +90,10 @@ h6 {
 
 .flex {
   display: flex;
+}
+
+.g20px {
+  gap: 20px;
 }
 
 .flex-column {
@@ -406,6 +415,10 @@ form textarea {
     padding: 10vh;
   }
 
+  .xph5vh {
+    padding: 0 5vh;
+  }
+
   .xp5vh {
     padding: 5vh;
   }
@@ -416,7 +429,7 @@ form textarea {
 
   .grid-container-about {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .xp10vh {
@@ -437,14 +450,6 @@ form textarea {
     grid-template-areas: "content image";
   }
 
-  /* .grid-container-card:nth-child(odd) {
-    grid-template-areas: "image content";
-  }
-
-  .grid-container-card:nth-child(even) {
-    grid-template-areas: "content image";
-  } */
-
   .m20px {
     margin: 10vh 5vh;
   }
@@ -454,12 +459,26 @@ form textarea {
     background: #fff url(assets/images/desktop-bg.svg) no-repeat center center;
   }
 
+  .bg-footer {
+    transition-duration: 1s;
+    background-image: #6070ff url(assets/images/footer-desktop-bg.svg) no-repeat center center;
+  }
+
   .grid-item-picture {
     grid-area: image;
   }
 
   .grid-item-content {
     grid-area: content;
+  }
+
+  .mv {
+    display: none;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 30px;
   }
 
 }

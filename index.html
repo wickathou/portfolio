@@ -16,9 +16,14 @@
         </a>
       </span>
       <span>
-        <a href="http://">
+        <a class="mv" href="http://">
           <img class="menu" src="assets/images/menu-template.svg" alt="navigation menu">
         </a>
+        <ul class="dv g20px xul">
+          <li><a href="http://">Portfolio</a></li>
+          <li><a href="http://">About</a></li>
+          <li><a href="http://">Contact</a></li>
+        </ul>
       </span>
     </nav>
   </header>
@@ -62,7 +67,7 @@
       <section class="m20px">
         <div class="grid-container-card m20px border-card bg-white p5vh">
           <div class="grid-item-picture">
-            <img class="border-10px fill-100" src="assets/images/Snapshoot Portfolio.svg" alt="Canopy project snapshot">
+            <img class="border-10px fill-100" src="assets/images/Snapshoot Portfolio 4.svg" alt="Canopy project snapshot">
           </div>
           <div class="grid-item-content flex flex-column">
             <h2 class="p10px">Tonic</h2>
@@ -86,20 +91,21 @@
         </div>
         <div class="grid-container-card m20px border-card bg-white p5vh">
           <div class="grid-item-picture">
-            <img class="border-10px fill-100" src="assets/images/Snapshoot Portfolio.svg" alt="Canopy project snapshot">
+            <img class="border-10px fill-100" src="assets/images/Snapshoot Portfolio 2.svg" alt="Canopy project snapshot">
           </div>
           <div class="grid-item-content flex flex-column">
-            <h2 class="p10px">Tonic</h2>
+            <h2 class="p10px">Multi-Post Stories</h2>
             <div class="flex aic">
-              <h4 class="p10px">Canopy</h4>
+              <h4 class="p10px">Facebook</h4>
               <img src="assets/images/Counter.svg" alt="Spacer">
-              <h5 class="p10px">Back end dev</h5>
+              <h5 class="p10px">Full stack dev</h5>
               <img src="assets/images/Counter.svg" alt="Spacer">
-              <h5 class="p10px">2022</h5>
+              <h5 class="p10px">2015</h5>
             </div>
-            <p class="p10px m0">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            <p class="p10px m0">Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
             <ul class="xul aic">
               <li class="mh10px p10px border-10px bg-tag"><h6>html</h6></li>
+              <li class="mh10px p10px border-10px bg-tag"><h6>Ruby on rails</h6></li>
               <li class="mh10px p10px border-10px bg-tag"><h6>css</h6></li>
               <li class="mh10px p10px border-10px bg-tag"><h6>javaScript</h6></li>
             </ul>
@@ -113,7 +119,7 @@
             <img class="border-10px fill-100" src="assets/images/Snapshoot Portfolio.svg" alt="Canopy project snapshot">
           </div>
           <div class="grid-item-content flex flex-column">
-            <h2 class="p10px">Tonic</h2>
+            <h2 class="p10px">Facebook 360</h2>
             <div class="flex aic">
               <h4 class="p10px">Canopy</h4>
               <img src="assets/images/Counter.svg" alt="Spacer">
@@ -124,6 +130,7 @@
             <p class="p10px m0">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
             <ul class="xul aic">
               <li class="mh10px p10px border-10px bg-tag"><h6>html</h6></li>
+              <li class="mh10px p10px border-10px bg-tag"><h6>Ruby on rails</h6></li>
               <li class="mh10px p10px border-10px bg-tag"><h6>css</h6></li>
               <li class="mh10px p10px border-10px bg-tag"><h6>javaScript</h6></li>
             </ul>
@@ -134,14 +141,14 @@
         </div>
         <div class="grid-container-card m20px border-card bg-white p5vh">
           <div class="grid-item-picture">
-            <img class="border-10px fill-100" src="assets/images/Snapshoot Portfolio.svg" alt="Canopy project snapshot">
+            <img class="border-10px fill-100" src="assets/images/Snapshoot Portfolio 3.svg" alt="Canopy project snapshot">
           </div>
           <div class="grid-item-content flex flex-column">
-            <h2 class="p10px">Tonic</h2>
+            <h2 class="p10px">Uber Navigation</h2>
             <div class="flex aic">
-              <h4 class="p10px">Canopy</h4>
+              <h4 class="p10px">Uber</h4>
               <img src="assets/images/Counter.svg" alt="Spacer">
-              <h5 class="p10px">Back end dev</h5>
+              <h5 class="p10px">Lead developer</h5>
               <img src="assets/images/Counter.svg" alt="Spacer">
               <h5 class="p10px">2022</h5>
             </div>
@@ -217,18 +224,20 @@
     </article>
   </main>
   <footer>
-    <article class="bg-footer border-tl">
+    <article class="bg-footer border-tl pv5">
       <section class="footer_class p5vh">
-        <h2 class="title">Contact me</h2>
-        <p class="details">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-        <form class="flex flex-column" action="https://formspree.io/f/mlevqnqq" method="POST">
+        <div class="xph5vh">
+          <h2 class="title">Contact me</h2>
+          <p class="details">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it </p>
+          <form class="flex flex-column" action="https://formspree.io/f/mlevqnqq" method="POST">
           <input type="text" id="name-input" name="name" placeholder="Your name" maxlength="30" required>
           <input type="email" id="email" name="email" placeholder="Your email" required>
           <textarea name="" id="" cols="30" rows="10" placeholder="Your message" required maxlength="500"></textarea>
           <div>
             <button type="submit" class="button-white">Get It Touch</button>
           </div>
-        </form>
+          </form>
+        </div>
       </section>
     </article>
   </footer>
