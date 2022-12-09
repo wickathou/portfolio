@@ -18,6 +18,7 @@ a {
   color: #344563;
 }
 
+
 h1,
 h2,
 h3,
@@ -198,6 +199,19 @@ h6 {
 
 .icon {
   width: 20px;
+  transition: transform 1s;
+}
+
+.icon:hover {
+  transform: scale(120%);
+}
+
+.link-text {
+  transition: transform 1s;
+}
+
+.link-text:hover {
+  transform: scale(120%);
 }
 
 .twitter {
@@ -290,6 +304,14 @@ h6 {
 .grid-container-card {
   display: grid;
   grid-template-rows: auto auto auto auto auto auto;
+}
+
+.grid-item-picture {
+  transition: transform 1s;
+}
+
+.grid-item-picture:hover {
+  transform: scale(105%);
 }
 
 .grid-container-list {
