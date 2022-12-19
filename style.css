@@ -516,5 +516,16 @@ form textarea {
 /* Special classes */
 
 .hidden {
-  display: none;
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+}
+
+.blur {
+  filter: blur(4px);
 }
