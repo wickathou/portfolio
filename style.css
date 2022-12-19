@@ -512,3 +512,9 @@ form textarea {
     display: block;
   }
 }
+
+/* Special classes */
+
+.hidden {
+  display: none;
+}
