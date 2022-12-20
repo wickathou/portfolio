@@ -535,9 +535,9 @@ form textarea {
   background-color: #6070ff8e;
 }
 
-.blur {
+/* .blur {
   filter: blur(4px);
-}
+} */
 
 .color-white {
   color: #fff;
