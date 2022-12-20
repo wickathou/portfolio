@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "- [📖 About the Project](#about-project)   - [🛠 Built With](#built-with)     - [Tech Stack](#tech-stack)   - [💻 Getting Started](#getting-started)     - [Prerequisites](#prerequisites)     - [Setup](#setup)     - [Usage](#usage) - [💻 Getting Started](#getting-started) - [👥 Authors](#authors) - [🔭 Future Features](#future-features) - [🤝 Contributing](#contributing) - [🙏 Acknowledgements](#acknowledgements) - [📝 License](#license)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wickathou/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wickathou/portfolio/issues"
+  },
+  "homepage": "https://github.com/wickathou/portfolio#readme",
+  "devDependencies": {
+    "hint": "^7.1.3"
+  }
+}

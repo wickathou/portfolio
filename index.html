@@ -5,31 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <!-- TO BE DELETED
+  <link rel="stylesheet" href="construction.css"> -->
+  <script src=""></script>
   <title>Portfolio || Javier</title>
 </head>
 <body>
-  <header class="bg-white fill-100">
-    <nav class="xp5vh m5vh flex navigation">
+  <header class="bg-white fill-100 ">
+    <nav class="xp5vh m5vh flex navigation" id="portfolio">
       <span>
         <a href="https://">
           <img class="logo" src="assets/images/My Logo.svg" alt="Logo">
         </a>
       </span>
-      <span>
-        <a class="mv" href="http://">
-          <img class="menu" src="assets/images/menu-template.svg" alt="Navigation menu">
-        </a>
+      <span class="mv" id="mobile-menu">
+        <img class="menu btn-menu" src="assets/images/menu-template.svg" alt="Navigation menu">
       </span>
       <span class="dv">
         <ul class="g20px xul">
-          <li class="link-text"><a href="http://">Portfolio</a></li>
-          <li class="link-text"><a href="http://">About</a></li>
-          <li class="link-text"><a href="http://">Contact</a></li>
+          <li class="link-text"><a href="#portfolio">Portfolio</a></li>
+          <li class="link-text"><a href="#about">About</a></li>
+          <li class="link-text"><a href="#contact">Contact</a></li>
         </ul>
       </span>
     </nav>
   </header>
-  <main class="fill-100">
+  <main class="fill-100 ">
     <article class="xp10vh bg-white border-bl bg-hero">
       <section class="p5vh flex flex-column">
         <h1>I’m Javier <br>
@@ -168,7 +169,7 @@
       </section>
     </article>
     <article class="grid-container-about bg-white border-tr pv5">
-      <section class="p5vh">
+      <section class="p5vh" id="about">
         <h2>About<br>
           Myself</h2>
         <p class="mv12px">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -225,7 +226,7 @@
       </section>
     </article>
   </main>
-  <footer>
+  <footer class="" id="contact">
     <article class="bg-footer border-tl pv5">
       <section class="footer_class p5vh">
         <div class="xph15vh">
@@ -243,5 +244,20 @@
       </section>
     </article>
   </footer>
+  <section class="modal hidden" id="modal">
+    <div class="m5vh fill-100 flex flex-column">
+      <div class="ase">
+        <img id="close-img" src="./assets/images/close-icon.svg" alt="Modal close icon" srcset="">
+      </div>
+      <div class="pt10px">
+        <ul class="xul flex-column g20px" id="mobile-menu-list">
+          <li class="link-text"><a href="#portfolio"><h2 class="color-white">Portfolio</h2></a></li>
+          <li class="link-text"><a href="#about"><h2 class="color-white">about</h2></a></li>
+          <li class="link-text"><a href="#contact"><h2 class="color-white">Contact</h2></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <script src="./app.js"></script>
 </body>
 </html>

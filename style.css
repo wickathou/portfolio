@@ -105,6 +105,10 @@ h6 {
   align-items: center;
 }
 
+.ase {
+  align-self: flex-end;
+}
+
 .jcc {
   justify-content: center;
 }
@@ -175,6 +179,10 @@ h6 {
   padding: 10px;
 }
 
+.pt10px {
+  padding-top: 10px;
+}
+
 .p-card-first {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -202,7 +210,7 @@ h6 {
 }
 
 .icon:hover {
-  transform: scale(120%);
+  transform: scale(0.8);
 }
 
 .link-text {
@@ -210,7 +218,7 @@ h6 {
 }
 
 .link-text:hover {
-  transform: scale(120%);
+  transform: scale(0.8);
 }
 
 .twitter {
@@ -310,7 +318,7 @@ h6 {
 }
 
 .grid-item-picture:hover {
-  transform: scale(105%);
+  transform: scale(0.95);
 }
 
 .grid-container-list {
@@ -488,7 +496,7 @@ form textarea {
 
   .bg-footer {
     transition-duration: 1s;
-    background-image: #6070ff url(assets/images/footer-desktop-bg.svg) no-repeat center center;
+    background: #6070ff url(assets/images/footer-desktop-bg.svg) no-repeat center center;
   }
 
   .grid-item-picture {
@@ -511,4 +519,26 @@ form textarea {
   .dv {
     display: block;
   }
+}
+
+/* Special classes */
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  background-color: #1929b3c4;
+}
+
+.blur {
+  filter: blur(4px);
+}
+
+.color-white {
+  color: #fff;
 }

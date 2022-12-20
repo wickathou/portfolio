@@ -105,3 +105,8 @@ dist
 
 # Construction CSS code
 construction.css
+
+# Linters
+.eslintrc.json
+.stylelintrc.json
+.hintrc
