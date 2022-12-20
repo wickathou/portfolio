@@ -5,28 +5,28 @@ const menuLinks = document.querySelectorAll('#mobile-menu-list li');
 const sectionBlur = document.querySelectorAll('footer, header, main');
 
 function toggleMenu() {
-    modal.classList.toggle('hidden');
-    modal.classList.toggle('flex');
-    sectionBlur.forEach(section => {
-        section.classList.toggle('blur');
-    });
+  modal.classList.toggle('hidden');
+  modal.classList.toggle('flex');
+  sectionBlur.forEach(section => {
+    section.classList.toggle('blur');
+  });
 }
 
 mobileMenu.addEventListener('click', () => {
-    toggleMenu();
+  toggleMenu();
 });
 closeMenu.addEventListener('click', () => {
-    toggleMenu();
+  toggleMenu();
 });
 
 menuLinks[0].addEventListener('click', () => {
-    toggleMenu();
+  toggleMenu();
 });
 
 menuLinks[1].addEventListener('click', () => {
-    toggleMenu();
+  toggleMenu();
 });
 
 menuLinks[2].addEventListener('click', () => {
-    toggleMenu();
+  toggleMenu();
 });
