@@ -523,9 +523,9 @@ form textarea {
 
 /* Special classes */
 
-/* .hidden {
-  display: block;
-} */
+.hidden {
+  display: none;
+}
 
 .modal {
   position: fixed;
