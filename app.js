@@ -7,7 +7,7 @@ const sectionBlur = document.querySelectorAll('footer, header, main');
 function toggleMenu() {
   modal.classList.toggle('hidden');
   modal.classList.toggle('flex');
-  sectionBlur.forEach(section => {
+  sectionBlur.forEach((section) => {
     section.classList.toggle('blur');
   });
 }
