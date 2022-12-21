@@ -195,6 +195,10 @@ h6 {
   width: 100%;
 }
 
+.vfill-90 {
+  height: 90%;
+}
+
 .logo {
   height: 40px;
   margin: 0 -12px;
@@ -542,3 +546,4 @@ form textarea {
 .color-white {
   color: #fff;
 }
+
