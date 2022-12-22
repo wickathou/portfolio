@@ -93,6 +93,10 @@ h6 {
   gap: 20px;
 }
 
+.g10px {
+  gap: 10px;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -195,10 +199,6 @@ h6 {
   width: 100%;
 }
 
-.vfill-90 {
-  height: 90%;
-}
-
 .logo {
   height: 40px;
   margin: 0 -12px;
@@ -255,6 +255,14 @@ h6 {
   display: flex;
   list-style-type: none;
   padding: 0;
+}
+
+/* Container box */
+
+.separator {
+  background-color: #EBECF0;
+  height: 1px;
+  width: 100%;
 }
 
 /* Box rounds */

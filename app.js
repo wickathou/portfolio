@@ -3,6 +3,12 @@ const closeMenu = document.querySelector('#close-img');
 const mobileMenu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelectorAll('#mobile-menu-list li');
 const sectionBlur = document.querySelectorAll('footer, header, main');
+const closeWorks = document.querySelector('#close-works');
+const works = document.querySelectorAll('#works>div');
+const lightboxWorks = document.querySelector('#works-lightbox');
+
+
+// Navbar toggle
 
 function toggleMenu() {
   modal.classList.toggle('hidden');
@@ -29,4 +35,28 @@ menuLinks[1].addEventListener('click', () => {
 
 menuLinks[2].addEventListener('click', () => {
   toggleMenu();
+});
+
+// Works toggle
+
+function toggleWorks() {
+  lightboxWorks.classList.toggle('hidden');
+  // If statement to be removed
+  let i = 0
+  if (i>1) {
+    sectionBlur.forEach((section) => {
+      section.classList.toggle('blur');
+    });
+  }
+  i++;
+}
+
+works.forEach(function(work) {
+  work.addEventListener('click', () => {
+    toggleWorks();
+  });
+});
+
+closeWorks.addEventListener('click', () => {
+  toggleWorks();
 });
