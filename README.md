@@ -1,18 +1,19 @@
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-  - [💻 Getting Started](#getting-started)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Portfolio Micro ](#-portfolio-micro-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+  - [💻 Getting Started ](#-getting-started-)
+  - [💻 Getting Started ](#-getting-started--1)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Usage](#usage)
-- [💻 Getting Started](#getting-started)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+  - [👥 Author ](#-author-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 # 📖 Portfolio Micro <a name="about-project"></a>
 
@@ -23,6 +24,12 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 HTML | CSS | GIT
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+- [Live Demo Link](https://wickathou.github.io/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -54,9 +61,9 @@ To run the project, open index.html with your preferred web browser or open it w
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Desktop version]**
-- [ ] **[Interactive menu]**
-- [ ] **[Animations]**
+- [ ] **[Form validations]**
+- [ ] **[Browser data storage]**
+- [ ] **[New live view]**
 ## 🤝 Contributing <a name="contributing"></a>
 
 Feel free to check the [issues page](https://github.com/wickathou/portfolio/issues).
@@ -72,6 +79,10 @@ Thanks to my coding partners!
 👤 **Sohail Batoor**
 
 - GitHub: [@batoorsohail](https://github.com/batoorsohail)
+
+👤 **Eugene Iyukhun**
+
+- GitHub: [@batoorsohail](https://github.com/Eugeneiyukhun)
 
 Thanks Microverse, learn how to code > [Join Microverse](https://www.microverse.org/?grsf=9m3hq6)
 
