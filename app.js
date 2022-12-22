@@ -7,15 +7,14 @@ const closeWorks = document.querySelector('#close-works');
 const works = document.querySelectorAll('#works>div');
 const lightboxWorks = document.querySelector('#works-lightbox');
 const lightboxContent = {
-  title : document.querySelector('#works-lightbox-tittle'),
-  client : document.querySelector('#works-lightbox-client'),
-  role : document.querySelector('#works-lightbox-role'),
-  year : document.querySelector('#works-lightbox-year'),
-  image : document.querySelector('#works-lightbox-image'),
-  body : document.querySelector('#works-lightbox-body'),
-  skills : document.querySelector('#works-lightbox-skills')
-}
-
+  title: document.querySelector('#works-lightbox-tittle'),
+  client: document.querySelector('#works-lightbox-client'),
+  role: document.querySelector('#works-lightbox-role'),
+  year: document.querySelector('#works-lightbox-year'),
+  image: document.querySelector('#works-lightbox-image'),
+  body: document.querySelector('#works-lightbox-body'),
+  skills: document.querySelector('#works-lightbox-skills'),
+};
 
 // Navbar toggle
 
@@ -40,13 +39,13 @@ function toggleWorks() {
   });
 }
 
-works.forEach(function(work) {
+works.forEach((work) => {
   work.addEventListener('click', () => {
     lightboxContent.title.innerText = work.querySelector('h2').innerText;
     lightboxContent.client.innerText = work.querySelector('.client').innerText;
     lightboxContent.role.innerText = work.querySelector('.role').innerText;
     lightboxContent.year.innerText = work.querySelector('.year').innerText;
-    lightboxContent.image.setAttribute('src',work.querySelector('img').getAttribute('src'));
+    lightboxContent.image.setAttribute('src', work.querySelector('img').getAttribute('src'));
     lightboxContent.body.innerText = work.querySelector('p').innerText;
     lightboxContent.skills.innerHTML = work.querySelector('ul').innerHTML;
     toggleWorks();

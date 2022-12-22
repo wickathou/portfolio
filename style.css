@@ -266,12 +266,6 @@ h6 {
 }
 
 /* Container box */
-/* 
-.separator {
-  background-color: #EBECF0;
-  height: 1px;
-  width: 100%;
-} */
 
 /* Box rounds */
 
@@ -474,16 +468,16 @@ form textarea {
   .mh2px {
     margin: 0 10px;
   }
-  
+
   .m5vh {
     margin: 0 5vh;
   }
 
-  #works-lightbox>.p10px {
+  #works-lightbox > .p10px {
     padding: 30px;
   }
 
-  #works-lightbox>.m5vh {
+  #works-lightbox > .m5vh {
     margin: 10vh 20vh;
   }
 
