@@ -147,8 +147,8 @@ h6 {
   margin: 10px;
 }
 
-.mh10px {
-  margin: 0 10px;
+.mh2px {
+  margin: 0 2px;
 }
 
 .p5vh {
@@ -454,6 +454,10 @@ form textarea {
 /* Media queries */
 
 @media screen and (min-width: 600px) {
+  .mh2px {
+    margin: 0 10px;
+  }
+  
   .m5vh {
     margin: 0 5vh;
   }
