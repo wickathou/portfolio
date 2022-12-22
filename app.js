@@ -16,7 +16,7 @@ const workData = [
     skills: [
       'html',
       'css',
-      'javaScript'
+      'javaScript',
     ],
   },
   {
@@ -30,7 +30,7 @@ const workData = [
       'html',
       'ruby on rails',
       'css',
-      'javaScript'
+      'javaScript',
     ],
   },
   {
@@ -44,7 +44,7 @@ const workData = [
       'html',
       'ruby on rails',
       'css',
-      'javaScript'
+      'javaScript',
     ],
   },
   {
@@ -57,7 +57,7 @@ const workData = [
     skills: [
       'html',
       'css',
-      'javaScript'
+      'javaScript',
     ],
   },
 ];
@@ -76,19 +76,20 @@ const lightboxContent = {
 
 workData.forEach((work) => {
   const workEntry = document.createElement('div');
-  workEntry.className= 'grid-container-card m20px border-card bg-white p5vh';
+  workEntry.className = 'grid-container-card m20px border-card bg-white p5vh';
   workEntry.innerHTML = `<div class="grid-item-picture"> <img class="border-10px fill-100" src="${work.image}" alt="Canopy project snapshot"> </div> <div class="grid-item-content flex flex-column"> <h2 class="p10px">${work.title}</h2> <div class="flex aic"> <h4 class="p10px client">${work.client}</h4> <img src="assets/images/Counter.svg" alt="Spacer"> <h5 class="p10px role">${work.role}</h5> <img src="assets/images/Counter.svg" alt="Spacer"> <h5 class="p10px year">${work.year}</h5> </div> <p class="p10px m0">${work.body}</p> <ul class="xul aic"> </ul> <div> <button>See project</button> </div> </div>`;
   work.skills.forEach((skill) => {
     const skillEntry = document.createElement('li');
     skillEntry.className = 'mh2px p10px border-10px bg-tag';
-    const skillText = document.createElement('h6')
-    skillText.innerText = skill
-    skillEntry.appendChild(skillText)
-    workEntry.querySelector('ul').appendChild(skillEntry)
+    const skillText = document.createElement('h6');
+    skillText.innerText = skill;
+    skillEntry.appendChild(skillText);
+    workEntry.querySelector('ul').appendChild(skillEntry);
   });
-  workEntry.querySelector('ul')
-  workSection.appendChild(workEntry)
-})
+  workEntry.querySelector('ul');
+  workSection.appendChild(workEntry);
+});
+
 const works = document.querySelectorAll('#works>div');
 
 // Navbar toggle
