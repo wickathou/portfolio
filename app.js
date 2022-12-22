@@ -41,14 +41,9 @@ menuLinks[2].addEventListener('click', () => {
 
 function toggleWorks() {
   lightboxWorks.classList.toggle('hidden');
-  // If statement to be removed
-  let i = 0
-  if (i>1) {
-    sectionBlur.forEach((section) => {
-      section.classList.toggle('blur');
-    });
-  }
-  i++;
+  sectionBlur.forEach((section) => {
+    section.classList.toggle('blur');
+  });
 }
 
 works.forEach(function(work) {
