@@ -199,8 +199,12 @@ h6 {
   width: 100%;
 }
 
+.min-w30 {
+  min-width: 30%;
+}
+
 .min-w150px {
-  min-width: 150px;
+  min-width: unset;
 }
 
 .logo {
@@ -262,12 +266,12 @@ h6 {
 }
 
 /* Container box */
-
+/* 
 .separator {
   background-color: #EBECF0;
   height: 1px;
   width: 100%;
-}
+} */
 
 /* Box rounds */
 
@@ -290,6 +294,10 @@ h6 {
 
 .border-tl {
   border-top-left-radius: 100px;
+}
+
+.border-top-line {
+  border-top: 1px solid #ebecf0;
 }
 
 .border-bottom-line {
@@ -346,6 +354,11 @@ h6 {
   display: grid;
   grid-template-columns: auto auto auto auto;
   column-gap: 10px;
+}
+
+.grid-lightbox {
+  display: grid;
+  grid-template-rows: auto auto;
 }
 
 /* Button styling */
@@ -457,7 +470,7 @@ form textarea {
 
 /* Media queries */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   .mh2px {
     margin: 0 10px;
   }
@@ -466,8 +479,16 @@ form textarea {
     margin: 0 5vh;
   }
 
+  #works-lightbox>.p10px {
+    padding: 30px;
+  }
+
   #works-lightbox>.m5vh {
-    margin: 10vh;
+    margin: 10vh 20vh;
+  }
+
+  .min-w150px {
+    min-width: 150px;
   }
 
   .p5vh {
@@ -544,6 +565,11 @@ form textarea {
 
   .dv {
     display: block;
+  }
+
+  .grid-lightbox {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
   }
 }
 
