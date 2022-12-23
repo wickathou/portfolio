@@ -72,6 +72,12 @@ const lightboxContent = {
   skills: document.querySelector('#works-lightbox-skills'),
 };
 
+const emailInput = document.getElementById("email");
+
+emailInput.addEventListener("input", function() {
+  this.value = this.value.toLowerCase();
+});
+
 // Work section dynamic generator
 
 workData.forEach((work) => {
