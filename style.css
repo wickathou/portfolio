@@ -167,6 +167,10 @@ h6 {
   padding: 20vh 0;
 }
 
+.p10px {
+  padding: 10px;
+}
+
 .pv20px {
   padding: 20px 0;
 }
@@ -177,10 +181,6 @@ h6 {
 
 .pr10px {
   padding-right: 10px;
-}
-
-.p10px {
-  padding: 10px;
 }
 
 .pt10px {
@@ -588,4 +588,16 @@ form textarea {
 
 .color-white {
   color: #fff;
+}
+
+input:invalid {
+  outline: 5px solid rgb(255, 82, 82);
+}
+
+input:valid {
+  outline: 5px solid #17ff9b;
+}
+
+#error-input {
+  background-color: #fff;
 }

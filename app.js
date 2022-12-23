@@ -72,6 +72,51 @@ const lightboxContent = {
   skills: document.querySelector('#works-lightbox-skills'),
 };
 
+// Validations
+
+const emailPattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)*$/;
+const namePattern = /^[a-zA-Z ]+$/;
+
+const formContent = document.getElementById('contact-form');
+const submitButton = document.getElementById('submit-button');
+const nameError = document.getElementById('name-error');
+const emailError = document.getElementById('email-error');
+const textError = document.getElementById('text-error');
+const errorContainer = document.getElementById('error-input');
+
+function comparer(reGex, value) {
+  return reGex.test(value) === false;
+}
+
+submitButton.addEventListener('click', (e) => {
+  const nameInput = formContent.querySelector('#name-input').value;
+  const emailInput = formContent.querySelector('#email').value;
+  const textInput = formContent.querySelector('#text-input').value;
+  if (nameInput != null && emailInput != null && textInput != null) {
+    if (comparer(namePattern, nameInput) || comparer(emailPattern, emailInput) || !textInput) {
+      e.preventDefault();
+      errorContainer.classList.toggle('hidden');
+      if (namePattern.test(nameInput) === false) {
+        nameError.innerText = 'Remove any special symbols or numbers in your name input';
+      } else {
+        nameError.innerText = '';
+      }
+      if (emailPattern.test(emailInput) === false) {
+        emailError.innerText = 'Write your email in lowercase';
+      } else {
+        emailError.innerText = '';
+      }
+      if (!textInput) {
+        textError.innerText = 'Write your message in the text space';
+      } else {
+        textError.innerText = '';
+      }
+    } else {
+      formContent.submit();
+    }
+  }
+});
+
 // Work section dynamic generator
 
 workData.forEach((work) => {
