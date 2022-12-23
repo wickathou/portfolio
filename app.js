@@ -83,14 +83,18 @@ const emailError = document.getElementById('email-error');
 const textError = document.getElementById('text-error');
 const errorContainer = document.getElementById('error-input');
 
+function comparer(reGex, value) {
+  return reGex.test(value) === false
+}
+
 formContent.addEventListener('submit', (e) => {
   const nameInput = formContent.querySelector('#name-input').value;
   const emailInput = formContent.querySelector('#email').value;
   const textInput = formContent.querySelector('#text-input').value;
   if (nameInput != null && emailInput != null && textInput != null) {
-    if (namePattern.test(nameInput) === false || emailPattern.test(emailInput) === false || !textInput) {
+    if (comparer(namePattern, nameInput) || comparer(emailPattern, emailInput) || !textInput) {
       e.preventDefault();
-      errorContainer.classList.toggle('hidden')
+      errorContainer.classList.toggle('hidden');
       if (namePattern.test(nameInput) === false) {
         nameError.innerText = 'Remove any special symbols or numbers in your name input';
       } else {
