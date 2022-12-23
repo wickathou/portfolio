@@ -84,7 +84,7 @@ const textError = document.getElementById('text-error');
 const errorContainer = document.getElementById('error-input');
 
 function comparer(reGex, value) {
-  return reGex.test(value) === false
+  return reGex.test(value) === false;
 }
 
 formContent.addEventListener('submit', (e) => {
