@@ -71,18 +71,40 @@ const lightboxContent = {
   body: document.querySelector('#works-lightbox-body'),
   skills: document.querySelector('#works-lightbox-skills'),
 };
-
-// Validations
-
+const formData = document.querySelectorAll('#name-input, #email, #text-input');
+const storedData = {
+  0: window.localStorage.getItem('0'),
+  1: window.localStorage.getItem('1'),
+  2: window.localStorage.getItem('2'),
+};
 const emailPattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)*$/;
 const namePattern = /^[a-zA-Z ]+$/;
-
 const formContent = document.getElementById('contact-form');
 const submitButton = document.getElementById('submit-button');
+const nameForm = formContent.querySelector('#name-input');
+const emailForm = formContent.querySelector('#email');
+const textForm = formContent.querySelector('#text-input');
 const nameError = document.getElementById('name-error');
 const emailError = document.getElementById('email-error');
 const textError = document.getElementById('text-error');
 const errorContainer = document.getElementById('error-input');
+
+// Filling storaged data
+
+const localStorageSet = (feature, item) => {
+  window.localStorage.setItem(feature, item);
+};
+
+// Local storage data
+
+formData.forEach((data, index) => {
+  data.addEventListener('input', () => {
+    localStorageSet(index, data.value);
+    storedData[index] = data.value;
+  });
+});
+
+// Validations
 
 function comparer(reGex, value) {
   return reGex.test(value) === false;
@@ -196,3 +218,7 @@ menuLinks[1].addEventListener('click', () => {
 closeWorks.addEventListener('click', () => {
   toggleWorks();
 });
+
+if (storedData[0] || storedData[1] || storedData[2]) {
+  [nameForm.value, emailForm.value, textForm.value] = storedData;
+}
