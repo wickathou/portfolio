@@ -78,6 +78,7 @@ const emailPattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]{0,61}[
 const namePattern = /^[a-zA-Z ]+$/;
 
 const formContent = document.getElementById('contact-form');
+const submitButton = document.getElementById('submit-button');
 const nameError = document.getElementById('name-error');
 const emailError = document.getElementById('email-error');
 const textError = document.getElementById('text-error');
@@ -87,7 +88,7 @@ function comparer(reGex, value) {
   return reGex.test(value) === false;
 }
 
-formContent.addEventListener('submit', (e) => {
+submitButton.addEventListener('click', (e) => {
   const nameInput = formContent.querySelector('#name-input').value;
   const emailInput = formContent.querySelector('#email').value;
   const textInput = formContent.querySelector('#text-input').value;
