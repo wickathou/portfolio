@@ -4,7 +4,7 @@
 - [📖 Portfolio Micro ](#-portfolio-micro-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
-  - [� Live Demo ](#-live-demo-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -59,7 +59,6 @@ To run the project, open index.html with your preferred web browser or open it w
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Form validations]**
 - [ ] **[Browser data storage]**
 - [ ] **[New live view]**
 ## 🤝 Contributing <a name="contributing"></a>
