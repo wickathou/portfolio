@@ -72,11 +72,69 @@ const lightboxContent = {
   skills: document.querySelector('#works-lightbox-skills'),
 };
 
+const emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+const namePattern = /^[a-zA-Z ]+$/
+
+const submitButton = document.getElementById('submit-button');
 const emailInput = document.getElementById("email");
 
 emailInput.addEventListener("input", function() {
   this.value = this.value.toLowerCase();
 });
+
+const formContent = document.getElementById('contact-form')
+
+formContent.addEventListener('submit', (e) => {
+  const nameInput = formContent.querySelector('#name-input').value;
+  const emailInput = formContent.querySelector('#email').value;
+  console.log(nameInput);
+  console.log(emailInput);
+  if (nameInput != null && emailInput != null) {
+    if (namePattern.test(nameInput) === false || emailPattern.test(emailInput) === false) {
+      e.preventDefault();
+    } else {
+      formContent.submit();
+    }
+  }
+})
+
+
+// function formValidation() {
+//   console.log('start');
+//   const formContent = document.getElementById('contact-form')
+//   const nameInput = formContent.querySelector('#name-input').value;
+//   const emailInput = formContent.querySelector('#email').value;
+//   console.log(formContent);
+//   console.log(nameInput);
+//   console.log(emailInput);
+//   if (nameInput != null && emailInput != null) {
+//     if (namePattern.test(nameInput) === true || emailPattern.test(emailInput) === true) {
+//       this.submit();
+//     } else {
+//       console.log('Error');
+//     }
+//   }
+// }
+
+// submitButton.addEventListener('click', (e) => {
+//   console.log('start');
+//   const formContent = document.getElementById('contact-form')
+//   const nameInput = formContent.querySelector('#name-input').value;
+//   const emailInput = formContent.querySelector('#email').value;
+//   console.log(formContent);
+//   console.log(nameInput);
+//   console.log(emailInput);
+//   if (nameInput != null && emailInput != null) {
+//     if (namePattern.test(nameInput) === false || emailPattern.test(emailInput) === false) {
+//       e.preventDefault();
+//     } else {
+//       console.log('Error');
+//     }
+//   } else {
+//     console.log('Error');
+//   }
+// });
+
 
 // Work section dynamic generator
 
