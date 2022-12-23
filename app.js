@@ -73,9 +73,9 @@ const lightboxContent = {
 };
 const formData = document.querySelectorAll('#name-input, #email, #text-input');
 const storedData = {
-  0: window.localStorage.getItem("0"),
-  1: window.localStorage.getItem("1"),
-  2: window.localStorage.getItem("2"),
+  0: window.localStorage.getItem('0'),
+  1: window.localStorage.getItem('1'),
+  2: window.localStorage.getItem('2'),
 };
 const emailPattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)*$/;
 const namePattern = /^[a-zA-Z ]+$/;
@@ -89,11 +89,11 @@ const emailError = document.getElementById('email-error');
 const textError = document.getElementById('text-error');
 const errorContainer = document.getElementById('error-input');
 
-// Filling storaged data 
+// Filling storaged data
 
 const localStorageSet = (feature, item) => {
-  window.localStorage.setItem(feature, item)
-}
+  window.localStorage.setItem(feature, item);
+};
 
 // Local storage data
 
@@ -220,7 +220,5 @@ closeWorks.addEventListener('click', () => {
 });
 
 if (storedData[0] || storedData[1] || storedData[2]) {
-  nameForm.value = storedData[0];
-  emailForm.value = storedData[1];
-  textForm.value = storedData[2];
+  [nameForm.value, emailForm.value, textForm.value] = storedData;
 }
