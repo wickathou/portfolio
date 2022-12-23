@@ -71,6 +71,28 @@ const lightboxContent = {
   body: document.querySelector('#works-lightbox-body'),
   skills: document.querySelector('#works-lightbox-skills'),
 };
+const formData = document.querySelectorAll('#name-input, #email, #text-input');
+const storageData = {
+  name: '',
+  email: '',
+  text: '',
+}
+
+// Local storage data 
+
+formData.forEach((data) => {
+  data.addEventListener('input', () => {
+    switch (data.) {
+      case value:
+        
+        break;
+    
+      default:
+        break;
+    }
+    storageData.data = data.value
+  });
+});
 
 // Validations
 
