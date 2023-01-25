@@ -77,6 +77,11 @@ h6 {
   color: #6070ff;
 }
 
+.bold-link {
+  font-weight: 600;
+  color: #0e4ab0;
+}
+
 .fz20px {
   font-size: 20px;
 }
@@ -132,6 +137,10 @@ h6 {
 }
 
 .m5vh {
+  margin: 5vh;
+}
+
+.m5h2v {
   margin: 5vh;
 }
 
@@ -471,6 +480,10 @@ form textarea {
 
   .m5vh {
     margin: 0 5vh;
+  }
+
+  .m5h2v {
+    margin: 2vh 5vh;
   }
 
   #works-lightbox > .p10px {

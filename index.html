@@ -5,17 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src=""></script>
+  <link rel="shortcut icon" href="./assets/images/javi-icon.svg" type="image/x-icon">
   <title>Portfolio || Javier</title>
 </head>
 <body>
   <header class="bg-white fill-100 ">
     <nav class="xp5vh m5vh flex navigation" id="portfolio">
-      <span>
-        <a href="https://">
-          <img class="logo" src="assets/images/My Logo.svg" alt="Logo">
-        </a>
-      </span>
       <span class="mv" id="mobile-menu">
         <img class="menu btn-menu" src="assets/images/menu-template.svg" alt="Navigation menu">
       </span>
@@ -25,6 +20,11 @@
           <li class="link-text"><a href="#about">About</a></li>
           <li class="link-text"><a href="#contact">Contact</a></li>
         </ul>
+      </span>
+      <span>
+        <a href="https://">
+          <img class="logo" src="assets/images/javi-icon.svg" alt="Logo">
+        </a>
       </span>
     </nav>
   </header>
@@ -86,7 +86,7 @@
             </a>
           </li>
         </ul>
-        <button class="m0">Get my resume</button>
+        <button type='button' class="m0">Get my resume</button>
       </section>
       <section class="p5vh">
         <ul class="xul flex-column">
@@ -166,7 +166,7 @@
     </div>
   </section>
   <section class="modal hidden" id="works-lightbox">
-    <div class="m5vh p10px bg-white border-10px flex flex-column  g10px">
+    <div class="m5h2v p10px bg-white border-10px flex flex-column  g10px">
       <div class="flex jcb">
         <h2 id="works-lightbox-tittle">Logo</h2>
         <img src="./assets/images/close-icon-black.svg" id="close-works" alt="Close icon for works ligthbox">
@@ -191,16 +191,16 @@
           </ul>
           <div class="flex border-top-line">
             <div>
-              <button class="flex jcb min-w150px">See live <img src="./assets/images/See live.svg" alt="see live button icon"></button>
+              <button type='button' class="flex jcb min-w150px" id="works-lightbox-live">See live <img src="./assets/images/See live.svg" alt="see live button icon"></button>
             </div>
             <div>
-              <button class="flex jcb min-w150px">See source <img src="./assets/images/Icon -GitHub.svg" alt="see source in Github"></button>
+              <button type='button' class="flex jcb min-w150px" id="works-lightbox-source">See source <img src="./assets/images/Icon -GitHub.svg" alt="see source in Github"></button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <script src="./app.js"></script>
+  <script type="module" src="./app.js"></script>
 </body>
 </html>
