@@ -1,4 +1,5 @@
-import workData from "./projects.js";
+import workData from './projects.js';
+
 const modal = document.querySelector('#modal');
 const closeMenu = document.querySelector('#close-img');
 const mobileMenu = document.querySelector('#mobile-menu');
@@ -17,7 +18,7 @@ const lightboxContent = {
   body: document.querySelector('#works-lightbox-body'),
   skills: document.querySelector('#works-lightbox-skills'),
   live: document.querySelector('#works-lightbox-live'),
-  source: document.querySelector('#works-lightbox-source')
+  source: document.querySelector('#works-lightbox-source'),
 };
 const formData = document.querySelectorAll('#name-input, #email, #text-input');
 const storedData = {
@@ -141,8 +142,8 @@ works.forEach((work) => {
     lightboxContent.image.setAttribute('src', work.querySelector('img').getAttribute('src'));
     lightboxContent.body.innerText = work.querySelector('p').innerText;
     lightboxContent.skills.innerHTML = work.querySelector('ul').innerHTML;
-    lightboxContent.live.addEventListener('click', () => {window.open(`${work.querySelector('#live-link').getAttribute('href')}`)})
-    lightboxContent.source.addEventListener('click', () => {window.open(`${work.querySelector('#source-link').getAttribute('href')}`)})
+    lightboxContent.live.addEventListener('click', () => { window.open(`${work.querySelector('#live-link').getAttribute('href')}`); });
+    lightboxContent.source.addEventListener('click', () => { window.open(`${work.querySelector('#source-link').getAttribute('href')}`); });
     toggleWorks();
   });
 });
