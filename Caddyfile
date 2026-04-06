@@ -1,0 +1,15 @@
+{
+	admin off
+}
+
+:3000 {
+	root * .
+	file_server {
+		hide .* diploi.yaml Dockerfile Dockerfile.dev README.md
+	}
+	encode gzip
+	log {
+		output stdout
+		format console
+	}
+}

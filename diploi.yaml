@@ -1,0 +1,11 @@
+# This file is used to build the infrastructure for a deployment.
+# After editing something here, apply the changes on the Diploi dashboard.
+# For more information, see https://diploi.com/yaml
+
+diploiVersion: v1.0
+components:
+  - name: Static Website
+    identifier: static
+    folder: /
+    package: https://github.com/diploi/component-static#v1
+addons: []
